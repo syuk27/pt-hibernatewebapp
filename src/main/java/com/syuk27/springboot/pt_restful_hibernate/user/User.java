@@ -2,12 +2,21 @@ package com.syuk27.springboot.pt_restful_hibernate.user;
 
 import java.time.LocalDate;
 
+import io.micrometer.common.lang.NonNull;
+import jakarta.validation.constraints.Past;
+import jakarta.validation.constraints.Size;
+
 public class User {
 
+	//jakarta.validation.constraints => 유효성 검증 
+	
+	@NonNull
 	private Integer id;
 	
+	@Size(min = 2)
 	private String name;
 	
+	@Past //현재보다 과거 
 	private LocalDate birthDate;
 	
 	public User(Integer id, String name, LocalDate birthDate) {
