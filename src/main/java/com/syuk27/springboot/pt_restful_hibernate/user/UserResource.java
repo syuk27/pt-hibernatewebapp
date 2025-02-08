@@ -17,6 +17,8 @@ import jakarta.validation.Valid;
 
 @RestController
 public class UserResource {
+	//api 문서 관리 => Swagger 또는 Hateoas, Swagger를 많이 사용 
+	//Swagger 문서는 OpenAPI 3.0을 기반으로 작성됨 
 	
 //	@Autowired => 1.필드 주입 방식 
 	private UserDaoService userDaoService;
@@ -73,4 +75,5 @@ public class UserResource {
 		}
 		
 	}
+	
 }
