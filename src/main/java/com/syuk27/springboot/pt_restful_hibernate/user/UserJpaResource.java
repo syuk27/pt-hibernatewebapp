@@ -81,7 +81,7 @@ public class UserJpaResource {
 		
 	}
 	
-	@GetMapping("/jpa/find_users/{id}/posts")
+	@GetMapping("/jpa/users/{id}/find_posts")
 	public ResponseEntity<List<Post>> retrievePostsForAllUsers(@PathVariable int id) {
 		
 		Optional<User> user = userRepository.findById(id);
