@@ -9,5 +9,5 @@ public class PtRestfulHibernateApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(PtRestfulHibernateApplication.class, args);
 	}
-
+	
 }
