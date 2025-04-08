@@ -1,4 +1,4 @@
-package com.syuk27.springboot.pt_restful_hibernate.ex01;
+package com.syuk27.springboot.pt_restful_hibernate.kyh.ex01;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
