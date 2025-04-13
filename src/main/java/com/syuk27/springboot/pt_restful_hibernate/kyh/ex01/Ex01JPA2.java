@@ -23,7 +23,7 @@ public class Ex01JPA2 {
 		tx.begin();
 
 		try {
-			Member member = new Member(200L, "member200");
+			Member member = new Member(200L, "member200", null, null, null, null, null, 0);
 			
 			//commit 전 db에 반영됨. jpql 쿼리 실행시 플러시 자동 호출됨. 
 			//영속성 컨텍스트(1차 캐시)를 비우지 않음.
