@@ -26,5 +26,11 @@ public class Member {
 	public void setName(String name) {
 		this.name = name;
 	}
+
+	public Member(Long id, String name) {
+		super();
+		this.id = id;
+		this.name = name;
+	}
 	
 }
