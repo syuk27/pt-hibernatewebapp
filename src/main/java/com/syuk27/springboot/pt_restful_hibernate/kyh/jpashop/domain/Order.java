@@ -42,6 +42,8 @@ public class Order {
 	@Enumerated(EnumType.STRING)
 	private OrderStatus status;
 	
+	// @OneToMany와 @ManyToOne을 둘 다 선언해야 양방향 관계가 됨. 
+	// 연관관계의 주인은 @ManyToOne - 실무에서는 대부분 @ManyToOne만 선언하는 단방향 매핑을 많이 사용. 
 	// 양방향 매핑 (필수 아님) 주로 JPQL 사용시 사용. 
 	public void addOrderItem(OrderItem orderItem) {
 		orderItems.add(orderItem);

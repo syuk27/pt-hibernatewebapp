@@ -31,6 +31,8 @@ public class Member {
 	
 	private String zipcode;
 	
+	// @OneToMany와 @ManyToOne을 둘 다 선언해야 양방향 관계가 됨. 
+	// 연관관계의 주인은 @ManyToOne - 실무에서는 대부분 @ManyToOne만 선언하는 단방향 매핑을 많이 사용. 
 	@OneToMany(mappedBy = "member") // 양방향 연관관계의 주인은 Order.class의 member필드. 외래키 있는 클래스가 주인. 
 	private List<Order> orders = new ArrayList<>(); // = new ArrayList<>(); -> NullPointerException 방지. JPA/Hibernate 공식 권장 사항.
 	
